@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveplusX2</title>
+    <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/materialize.min.css"/>
+    <link rel="stylesheet" href="./css/default.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <link rel="icon" href="../favicon.png">
+</head>
+<body>
+    <!--MENU BAR-->
+    <div class="nav-bar" id="nav-bar">
+        <!--MENU-->
+        <div class="logo-contain" id = "logo-contain" >
+            <a href="/"><img class="logo" id="logo" src="./resources/logo.svg"/></a>
+            <a class="contacts" href="mailto:saveplusx2@gmail.com" target="_blank">Contact: saveplusx2@gmail.com</a>
+        </div>
+    </div>
+
+    <!--DOWNLOAD CONTAIN-->
+    <div class="container" id="container">
+        <!--DOWNLOAD INPUT CONTAIN-->
+        <div class="download-contain" id="info-contain">
+            <form action="#" method="post" name="download-form" class="download-form" id="download-form">
+                <!--URL ICON-->
+                <div class="download-icon">
+                    <img src="./resources/icons/url.svg"/>
+                </div>
+                <!--LINK INPUT-->
+                <div class="link-input-contain">
+                    <input placeholder="Put the link here..." name="link-input"  type="text" class="link-input" id="link-input"/>
+                </div>
+                <div class="submit-contain" id="submit-contain">
+                    <button type="submit" class="waves-effect waves-light download-btn" id="download-btn"><a>DOWNLOAD</a>   
+                        <div class="preloader-wrapper small active" id="loader-circle">
+                            <div class="spinner-layer spinner-green-only">
+                              <div class="circle-clipper left">
+                                <div class="circle"></div>
+                              </div><div class="gap-patch">
+                                <div class="circle"></div>
+                              </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                              </div>
+                            </div>
+                          </div></button>
+                </div>
+            </form>    
+        </div>
+        
+        <div class="info-contain" id="info-contain">
+            <h1 class="title-f" id="title-f">Online Video Downloader</h1>
+            <h1 class="title-b" id="title-b">Download videos from Youtube, Facebook, Instagram, Reddit and many more.</h1>
+            <h1 class="title" id="title">SUPPORTED SITES</h1>
+            
+            <!--SITES ROW FOR DESKTOP-->
+
+            <div class="sites-supported-row" id="sites-supported-row">
+                <!--SITES ROW 1-->
+                <div class="sites-row" id="sites-row">
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/facebook (1).svg"/>
+                        <p>Facebook</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/instagram.svg"/>
+                        <p>Instagram</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/red.svg"/>
+                        <p>Vimeo</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/reddit.svg"/>
+                        <p>Reddit</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/tiktok.png"/>
+                        <p>Tiktok</p>
+                    </a>
+                </div>
+                <!--SITES ROW 2-->
+                <div class="sites-row" id="sites-row">
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/Twitch.png"/>
+                        <p>Twitch</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/twitter.svg"/>
+                        <p>Twitter</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/vk.svg"/>
+                        <p>VK</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/youtube.png"/>
+                        <p>Youtube</p>
+                    </a>
+                    <a class="sites" href="/help/website">
+                        <img src="./resources/icons/tumblr.svg"/>
+                        <p>Tumblr</p>
+                    </a>
+                </div>
+            </div>
+
+            <!--SITES ROW FOR MOBILE-->
+            <div class="sites-supported-row-m" id="sites-supported-row-m">
+                <!--SITES ROW 1-->
+                <div class="sites-row-m" id="sites-row-m">
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/facebook (1).svg"/>
+                        <p>Facebook</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/instagram.svg"/>
+                        <p>Instagram</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/red.svg"/>
+                        <p>Vimeo</p>
+                    </a>
+                </div>
+                <!--SITES ROW 2-->
+                <div class="sites-row-m" id="sites-row-m">
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/reddit.svg"/>
+                        <p>Reddit</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/tiktok.png"/>
+                        <p>Tiktok</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/tumblr.svg"/>
+                        <p>Tumblr</p>
+                    </a>
+                </div>
+                <!--SITES ROW 3-->
+                <div class="sites-row-m" id="sites-row-m">
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/twitter.svg"/>
+                        <p>Twitter</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/Twitch.png"/>
+                        <p>Twitch</p>
+                    </a>
+                    <a class="sites-m" href="/help/website">
+                        <img src="./resources/icons/youtube.png"/>
+                        <p>Youtube</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="help-contain" style="text-align: center;">
+                <h1 class="help-title">HOW TO GET URLS?</h1>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                    </span>
+                <div class="help-images">
+                    <div class="image" id="facebook">
+                        <img class="materialboxed" src="../images/facebook.png"/>
+                        <a class="image-title">Facebook</a>
+                    </div>
+                    <div class="image" id="instagram">
+                        <img class="materialboxed"  src="../images/instagram.png"/>
+                        <a class="image-title">Instagram</a>
+                    </div>
+                </div>
+                <div class="help-images">
+                    <div class="image" id="reddit">
+                        <img class="materialboxed"  src="../images/reddit.png"/>
+                        <a class="image-title">Reddit</a>
+                    </div>
+                    <div class="image" id="tiktok">
+                        <img class="materialboxed"  src="../images/tiktok.png"/>
+                        <a class="image-title">Tiktok</a>
+                    </div>
+                    <div class="image" id="youtube">
+                        <img class="materialboxed"  src="../images/youtube.png"/>
+                        <a class="image-title">Youtube</a>
+                    </div>
+                </div>
+                <div class="help-section">
+                    <h2 class="help-section-title">Steps to parse and download videos</h2>
+                    <p>1. Copy the video link of the video that you would like to download.</p>
+                    <p>2. Paste the video link into the text box on the homepage.</p>
+                    <p>3. Wait while our servers process the video and generate download links for you.</p>
+                    <p>4. Once we successfully generate the download links you can click on the version of the video you'd like to save. Click the download button, press the right mouse button and select save video as.</p>
+                </div>
+            </div>
+
+            <!--INFO-->
+            <div class="info" id="info">
+                </br>
+                <a class="copyright" style="font-weight:900" href="mailto:saveplusx2@gmail.com" target="_blank">Contact: saveplusx2@gmail.com</a>
+                </br>
+                <a class="copyright">Copyright © 2020 Saveplus2x.com. All rights reserved.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

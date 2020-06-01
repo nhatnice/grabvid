@@ -1,0 +1,259 @@
+/*ICON*/
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/*SF*/
+/*---------------------------------------------------------------------------*
+ * SF UI Text
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    src: url("../resources/fonts/SF/SF-UI-Text-Bold.otf");
+  }
+  
+  /** Bold Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-BoldItalic.otf");
+  }
+  
+  /** Heavy */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 800;
+    src: url("../resources/fonts/SF/SF-UI-Text-Heavy.otf");
+  }
+  
+  /** Heavy Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 800;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-HeavyItalic.otf");
+  }
+  
+  /** Light */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 200;
+    src: url("../resources/fonts/SF/SF-UI-Text-Light.otf");
+  }
+  
+  /** Light Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 200;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-HeavyItalic.otf");
+  }
+  
+  /** Medium */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 500;
+    src: url("../resources/fonts/SF/SF-UI-Text-Medium.otf");
+  }
+  
+  /** Medium Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 500;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-MediumItalic.otf");
+  }
+  
+  /** Regular */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    src: url("../resources/fonts/SF/SF-UI-Text-Regular.otf");
+  }
+  
+  /** Regular Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-RegularItalic.otf");
+  }
+  
+  /** Semibold */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 600;
+    src: url("../resources/fonts/SF/SF-UI-Text-Semibold.otf");
+  }
+  
+  /** Semibold Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 600;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-SemiboldItalic.otf");
+  }
+  
+  /** Ultrathin */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 100;
+    src: url("../resources/fonts/SF/SF-UI-Text-Ultrathin.otf");
+  }
+  
+  /** Ultrathin Italic */
+  @font-face {
+    font-family: "SF Text";
+    font-weight: 100;
+    font-style: italic;
+    src: url("../resources/fonts/SF/SF-UI-Text-UltrathinItalic.otf");
+  }
+  
+
+/*ICONS*/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../resources/fonts/googleIcons/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../resources/fonts/googleIcons/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../resources/fonts/googleIcons/MaterialIcons-Regular.woff) format('woff'),
+      url(../resources/fonts/googleIcons/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+/*COMFORTAA*/
+
+@font-face {
+        font-family:Comfortaa;
+        src:url("../resources/fonts/Comfortaa/Comfortaa.ttf") format("truetype");
+        font-weight:300 700;
+        fontstyle:normal;
+    }
+
+    @font-face {
+        font-family:Comfortaa;
+        src:url("../resources/fonts/Comfortaa/Comfortaa.ttf") format("truetype");
+        font-weight:bold;
+        font-style:bold;
+    }
+
+
+/*OPENSANS*/
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansLight.ttf") format("truetype");
+    font-weight:300;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansLightItalic.ttf") format("truetype");
+    font-weight:300;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansRegular.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansItalic.ttf") format("truetype");
+    font-weight:400;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansSemiBold.ttf") format("truetype");
+    font-weight:600;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansSemiBoldItalic.ttf") format("truetype");
+    font-weight:600;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansBold.ttf") format("truetype");
+    font-weight:700;
+    font-style:bold;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansBoldItalic.ttf") format("truetype");
+    font-weight:700;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansExtraBold.ttf") format("truetype");
+    font-weight:800;
+    font-style:bold;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src:url("../resources/fonts/OpenSans/OpenSansExtraBoldItalic.ttf") format("truetype");
+    font-weight:800;
+    font-style:italic;
+}
+
+
+
+
+
+
+

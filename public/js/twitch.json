@@ -1,0 +1,103 @@
+{
+    upload_date: '20200404',
+    playlist: null,
+    views: 52887,
+    http_headers: {
+      'Accept-Language': 'en-us,en;q=0.5',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.1 Safari/537.36',
+      'Accept-Encoding': 'gzip, deflate',
+      'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    },
+    extractor: 'twitch:clips',
+    uploader: 'Kingkoen17',
+    display_id: '659574452',
+    url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452.mp4',
+    formats: [
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-360.mp4',
+        fps: 29,
+        protocol: 'https',
+        ext: 'mp4',
+        http_headers: [Object],
+        format: '360 - 360p',
+        format_id: '360',
+        height: 360
+      },
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-480.mp4',
+        fps: 29,
+        protocol: 'https',
+        ext: 'mp4',
+        http_headers: [Object],
+        format: '480 - 480p',
+        format_id: '480',
+        height: 480
+      },
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-720.mp4',
+        fps: 59,
+        protocol: 'https',
+        ext: 'mp4',
+        http_headers: [Object],
+        format: '720 - 720p',
+        format_id: '720',
+        height: 720
+      },
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452.mp4',
+        fps: 59,
+        protocol: 'https',
+        ext: 'mp4',
+        http_headers: [Object],
+        format: '1080 - 1080p',
+        format_id: '1080',
+        height: 1080
+      }
+    ],
+    fps: 59,
+    id: '659574452',
+    thumbnail: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-preview-480x272.jpg',
+    timestamp: 1585990163,
+    format: '1080 - 1080p',
+    format_id: '1080',
+    webpage_url_basename: 'PhilanthropicDarkTildeBibleThump',
+    ext: 'mp4',
+    duration: '43',
+    requested_subtitles: null,
+    creator: 'LCK',
+    thumbnails: [
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-preview-86x45.jpg',
+        id: 'tiny',
+        resolution: '86x45',
+        height: 45,
+        width: 86
+      },
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-preview-260x147.jpg',
+        id: 'small',
+        resolution: '260x147',
+        height: 147,
+        width: 260
+      },
+      {
+        url: 'https://clips-media-assets2.twitch.tv/AT-cm%7C659574452-preview-480x272.jpg',
+        id: 'medium',
+        resolution: '480x272',
+        height: 272,
+        width: 480
+      }
+    ],
+    _filename: 'someone got murdered-659574452.mp4',
+    title: 'someone got murdered',
+    uploader_id: '72439253',
+    webpage_url: 'https://www.twitch.tv/lck/clip/PhilanthropicDarkTildeBibleThump',
+    fulltitle: 'someone got murdered',
+    protocol: 'https',
+    extractor_key: 'TwitchClips',
+    height: 1080,
+    playlist_index: null,
+    _duration_raw: 43,
+    _duration_hms: '00:00:43'
+  }

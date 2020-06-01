@@ -1,0 +1,459 @@
+@import "common/mixin";
+@import "common/variables";
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "SF Text";
+    height: 100%;
+    background-image: url("../resources/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.spinner-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-color: #ffffff;
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+}
+
+.preloader-wrapper.active{
+    width: 24px;
+    height: 24px;
+    display:none;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    .logo-contain {
+        .logo {
+            margin-left: 44px;
+            margin-top: 18px;
+            height: 29px;
+        }
+        .contacts{
+            float: right;
+            font-size: 16px;
+            font-weight: 600;
+            color: #233745;
+            padding: 20px 39px;
+        }
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.container {
+    width: 849px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+        width: calc(100% - 48px);
+        top: 50%!important;
+    }
+
+    @include tablet {
+        width: calc(100% - 48px);
+    }
+
+    @include desktop-HD {
+        top: 55%;
+    }
+
+    .download-contain{
+        width:100%;
+        height: 64px;
+        border-radius: 14px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        float: left;
+
+        @include mobile {
+            display: none;
+        }
+
+        .download-form {
+            .download-icon {
+                height: 100%;
+                width: 64px;
+                float:left;
+    
+                @include mobile {
+                    display: none;
+                }
+    
+                img {
+                    height: 40px;
+                    width: 40px;
+                    margin-left:25.7px;
+                    margin-top: 12.7px;
+                }
+            }
+    
+            .link-input-contain{
+                width: 620px;
+                height: 100%;
+                float:left;
+                margin-left: 24px;
+    
+                @include mobile {
+                    width: calc(100% - 143px);
+                    height: 50px;
+                }
+
+                @include tablet {
+                    height: 64px;
+                    width: calc(100% - 289px);
+                }
+    
+                input {
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    height: 40px;
+                    padding-left: 24px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 12px;
+                    width: 100%;
+                    border-left: 2px solid #233745;
+                    font-family: "SF Text";
+    
+                    @include mobile {
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        font-size: 13px;
+                    }
+                }
+                
+                input::placeholder {
+                    color: #23374556;
+                }
+            }
+    
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                border-radius: 9px;
+                background: #233745;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: "SF Text";
+                color: #fff;
+                cursor: pointer;
+                -webkit-box-shadow: 0 3.5px 10.5px 0 rgba(35, 55, 69, 0.56);
+                box-shadow: 0 3.5px 10.5px 0 rgba(35, 55, 69, 0.56);
+                width: 129px;
+                height: 40px;
+                margin: 0 auto;
+                padding: 0;
+                display: inline-block;
+                line-height: 40px;
+                vertical-align: middle;
+                margin-top: 12px;
+                text-align: center;
+            
+
+                a{
+                    //float: left;
+                    //margin-left: 10px;
+                    color: #fff;
+                }
+
+                .preloader-wrapper.active {
+                    margin-top: 7px;
+                    width: 24px;
+                    height: 24px;
+
+                    @include mobile {
+                        display: none!important;
+                    }
+                }
+                @include mobile {
+                    margin: 7px 10px;
+                    width: 99px;
+                    height: 36px;
+                    font-size: 12px;
+                    padding: 11px 14px;
+
+                    a {
+                        margin-top: -12px;
+                        float: left;
+                        margin-left:0!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .info-contain{
+        margin-top: 16px;
+        width: 100%;
+        float: left;
+        border-radius: 14px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+
+        overflow: auto;
+
+        @include mobile {
+            
+        }
+
+        @include desktop-HD {
+            height: 500px;
+        }
+
+
+        .title-f {
+            font-size: 40px;
+            font-family: "SF Text";
+            color: #233745;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .title-b {
+            font-size: 16px;
+            margin-top: 0px;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 56px;
+            font-family: "SF Text";
+            color: #233745;
+
+            @include mobile {
+                margin-top: 30px;
+            }
+        }
+
+        .download-info {
+            width:100%;
+            display:flex;
+            flex-direction: row;
+            text-align: center;
+
+            @include mobile {
+                display: block;
+            }
+
+            .video-info {
+                flex: 1;
+                .video-title {
+                    max-width: 243px;
+                    margin: auto;
+                    span{
+                        font-family: "SF Text";
+                        color: #233745;
+                    }
+                }
+
+                @include mobile {
+                    margin-top: 30px;
+                }
+
+                .video-thumb {
+                    height: 128px;
+                    margin: auto;
+                    border-radius: 7px;
+                    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.53), 0 3px 1px -7px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+                }
+
+            }
+
+            .download-info {
+                flex: 1;
+
+                @include mobile {
+                    padding: 25px;
+                }
+            }
+        }
+
+        .sites-supported-row {
+            margin-top: 42px;
+            margin: auto;
+            display: block;
+
+            @include mobile {
+                display: none;
+            }
+            .sites-row{
+                display: flex;
+                flex-direction: row;
+                margin-top: 48px;
+                padding-left: 133px;
+                padding-right: 133px;
+
+                .sites {    
+                    flex: 1;
+                    text-align: center;
+                    float: left;
+                    padding-top: 14px;
+                    border-radius: 14px;
+                    transition: background 0.2s;
+                    cursor: pointer;
+                    
+                    img {
+                        height: 34px;
+                        width: 34px;
+                    }
+    
+                    p{
+                        font-size: 14px;
+                        color: #233745;
+                        margin-top: 8px;
+                        font-weight: 600;
+                    }
+                }
+
+                .sites:hover{
+                    background-color:#f0f0f0;
+                }
+            }
+        }
+
+        .sites-supported-row-m{
+            display: none;
+
+            @include mobile {
+                display: block;
+                margin-top: 42px;
+                margin: auto;
+            }
+            .sites-row-m{
+                display: flex;
+                flex-direction: row;
+                margin-top: 12px;
+                padding-left: 54px;
+                padding-right: 54px;   
+
+                .sites-m {    
+                    flex: 1;
+                    text-align: center;
+                    float: left;
+                    padding-top: 14px;
+                    border-radius: 14px;
+                    transition: background 0.2s;
+                    cursor: pointer;
+                    
+                    img {
+                        height: 34px;
+                        width: 34px;
+                    }
+    
+                    p{
+                        font-size: 14px;
+                        color: #233745;
+                        margin-top: 8px;
+                        font-weight: 600;
+                    }
+                }
+
+                .sites-m:hover{
+                    background-color:#f0f0f0;
+                }
+            }
+        }
+
+        .info {
+            height: 64px;
+            vertical-align: middle;
+            padding: 46px;
+            @include mobile {
+                display: none;
+            }
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 11px 46px;
+                margin: 18px 26px;
+                margin: 14px 18px;
+                border-radius: 9px;
+                background: #E53935;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: "SF Text";
+                color: #fff;
+                cursor: pointer;
+                -webkit-box-shadow: 0 3.5px 10.5px 0 #E5393556;
+                box-shadow: 0 3.5px 10.5px 0 #E5393556;
+                margin-top: 46px;
+                margin-bottom:24px;
+
+                @include mobile {
+                    margin-top: 20px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .copyright {
+                font-size: 12px;
+                color: #23374575;
+                margin-bottom: 16px;
+                margin-top: 57px;
+
+                @include mobile {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
