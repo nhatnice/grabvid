@@ -53,14 +53,14 @@ body {
   }
 }
 .help-contain .help-images {
-  width: calc(100% - 50%);
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin: auto;
 }
 @media (max-width: 479px) {
   .help-contain .help-images {
-    width: calc(100% - 2%);
+    width: 98%;
   }
 }
 .help-contain .help-images .image {
@@ -130,10 +130,10 @@ body {
   height: 100%;
   opacity: 0;
   border-color: #ffffff;
-  border-top-color: white;
-  border-right-color: white;
-  border-bottom-color: white;
-  border-left-color: white;
+  border-top-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
 }
 
 .preloader-wrapper.active {
@@ -261,7 +261,7 @@ body {
   }
 }
 .container .download-contain .download-form .link-input-contain input::placeholder {
-  color: #23374556;
+  color: rgba(35, 55, 69, 0.337254902);
 }
 .container .download-contain .download-form .submit-contain {
   float: left;
@@ -491,8 +491,8 @@ body {
   font-family: "SF Text";
   color: #fff;
   cursor: pointer;
-  -webkit-box-shadow: 0 3.5px 10.5px 0 #E5393556;
-  box-shadow: 0 3.5px 10.5px 0 #E5393556;
+  -webkit-box-shadow: 0 3.5px 10.5px 0 rgba(229, 57, 53, 0.337254902);
+  box-shadow: 0 3.5px 10.5px 0 rgba(229, 57, 53, 0.337254902);
   margin-top: 46px;
   margin-bottom: 24px;
 }
@@ -510,7 +510,7 @@ body {
 }
 .container .info-contain .info .copyright {
   font-size: 12px;
-  color: #23374575;
+  color: rgba(35, 55, 69, 0.4588235294);
   margin-bottom: 16px;
   margin-top: 57px;
 }
@@ -518,6 +518,11 @@ body {
   .container .info-contain .info .copyright {
     font-size: 9px;
   }
+}
+
+.download-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
 }
 
 /*# sourceMappingURL=default.css.map */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaveplusX2</title>
+    <title>GrabVid</title>
     <link rel="stylesheet" href="./css/fonts.css"/>
     <link rel="stylesheet" href="./css/materialize.min.css"/>
     <link rel="stylesheet" href="./css/download.css"/>
@@ -18,7 +18,7 @@
         <!--MENU-->
         <div class="logo-contain" id = "logo-contain" >
             <a href="/"><img class="logo" id="logo" src="./resources/logo.svg"/></a>
-            <a class="contacts" href="mailto:saveplusx2@gmail.com" target="_blank">Contact: saveplusx2@gmail.com</a>
+            <a class="contacts" href="mailto:contact@nhattran.dev" target="_blank">Contact: contact@nhattran.dev</a>
         </div>
     </div>
     <!--DOWNLOAD CONTAIN-->
@@ -55,445 +55,41 @@
             <h1 class="title-f" id="title-f">Online Video Downloader</h1>
             <h1 class="title-b" id="title-b">Download videos from Youtube, Facebook, Instagram, Reddit and many more.</h1>
             <div class="download-info">
-                <% if(type == 0) {%>
-                    <!--YOUTUBE DOWNLOAD-->
-                    <div class="video-info">       
-                        <img class="video-thumb" src="<%=videoThumbnail.thumbnails[3].url%>"/>        
-                        </br></br>
-                        <div class="video-title">
-                            <span><%=videoTitle%></span>
-                        </div>
+                <div class="video-info">
+                    <img class="video-thumb" src="<%=thumbnail%>"/>
+                    </br></br>
+                    <div class="video-title">
+                        <span><%=title%></span>
                     </div>
-                    <div class="download-info">
-                        <table>
-                            <thead>
-                              <tr>
-                                  <th>Quality</th>
-                                  <th>Format</th>
-                                  <th>Type</th>
-                                  <th>Download</th>
-                              </tr>
-                            </thead>
-                    
-                            <tbody>
-                              <tr>
-                                <td>360p</td>
-                                <td>mp4</td>
-                                <td>Audio</td>
-                                <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>128 AUDIO</td>
-                                <td>mp4</td>
-                                <td>Audio</td>
-                                <td><a href="<%=video8%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>1080p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video2%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>720p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video3%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>480p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video4%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>360p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video5%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>240p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video6%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>144p</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video7%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                <% } else if(type == 1) { %>
-                    <!--FACEBOOK DOWNLOAD-->
-                    <div class="video-info">       
-                        <img class="video-thumb" src=""/>        
-                        </br></br>
-                        <div class="video-title">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="download-info">
-                        <table>
-                            <thead>
-                              <tr>
-                                  <th>Quality</th>
-                                  <th>Format</th>
-                                  <th>Type</th>
-                                  <th>Download</th>
-                              </tr>
-                            </thead>
-                    
-                            <tbody>
-                                <tr>
-                                <td>HD</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video1.url%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                              <tr>
-                                <td>SD</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video2.url%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                <% } else if(type == 2) { %>
-                    <!--TIKTOK DOWNLOAD-->
-                    <div class="video-info">       
-                        <img class="video-thumb" src="<%=thumbnail%>"/>        
-                        </br></br>
-                        <div class="video-title">
-                            <span><%=title%></span>
-                        </div>
-                    </div>
-                    <div class="download-info">
-                        <table>
-                            <thead>
-                              <tr>
-                                  <th>Quality</th>
-                                  <th>Format</th>
-                                  <th>Type</th>
-                                  <th>Download</th>
-                              </tr>
-                            </thead>
-                    
-                            <tbody>
-                                <tr>
-                                <td>Full HD</td>
-                                <td>mp4</td>
-                                <td>Video</td>
-                                <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                    <% } else if(type == 3) { %>
-                        <!--INSTAGRAM DOWNLOAD-->
-                        <div class="video-info">       
-                            <img class="video-thumb" src="<%=thumbnail%>"/>        
-                            </br></br>
-                            <div class="video-title">
-                                <span><%=title%></span>
-                            </div>
-                        </div>
-                        <div class="download-info">
-                            <table>
-                                <thead>
-                                  <tr>
-                                      <th>Quality</th>
-                                      <th>Format</th>
-                                      <th>Type</th>
-                                      <th>Download</th>
-                                  </tr>
-                                </thead>
-                        
-                                <tbody>
-                                    <tr>
-                                    <td>Normal</td>
-                                    <td>mp4</td>
-                                    <td>Video</td>
-                                    <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                    </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                        <% } else if(type == 4) { %>
-                            <!--TWITTER DOWNLOAD-->
-                            <div class="video-info">       
-                                <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                </br></br>
-                                <div class="video-title">
-                                    <span><%=title%></span>
-                                </div>
-                            </div>
-                            <div class="download-info">
-                                <table>
-                                    <thead>
-                                      <tr>
-                                          <th>Quality</th>
-                                          <th>Format</th>
-                                          <th>Type</th>
-                                          <th>Download</th>
-                                      </tr>
-                                    </thead>
-                            
-                                    <tbody>
-                                      <tr>
-                                        <td>720p</td>
-                                        <td>mp4</td>
-                                        <td>Video</td>
-                                        <td><a href="<%=video2%>" download target="_blank">DOWNLOAD</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td>480p</td>
-                                        <td>mp4</td>
-                                        <td>Video</td>
-                                        <td><a href="<%=video3%>" download target="_blank">DOWNLOAD</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td>240p</td>
-                                        <td>mp4</td>
-                                        <td>Video</td>
-                                        <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                            </div>
-                            <% } else if(type == 5) { %>
-                              <!--REDDIT DOWNLOAD-->
-                              <div class="video-info">       
-                                  <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                  </br></br>
-                                  <div class="video-title">
-                                      <span><%=title%></span>
-                                  </div>
-                              </div>
-                              <div class="download-info">
-                                  <table>
-                                      <thead>
-                                        <tr>
-                                            <th>Quality</th>
-                                            <th>Format</th>
-                                            <th>Type</th>
-                                            <th>Download</th>
-                                        </tr>
-                                      </thead>
-                              
-                                      <tbody>
-                                        <tr>
-                                          <td><%=videoQuality%></td>
-                                          <td>mp4</td>
-                                          <td>Video No Sound</td>
-                                          <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                        </tr>
-                                        <tr>
-                                          <td><%=videoQuality%></td>
-                                          <td>mp4</td>
-                                          <td>Video With Sound</td>
-                                          <td><a href="/files/<%=video2%>.mp4" download target="_blank">DOWNLOAD</a></td>
-                                        </tr>
-                                        <tr>
-                                          <td>128Kbps</td>
-                                          <td>mp3</td>
-                                          <td>Audio</td>
-                                          <td><a href="<%=audio%>" download target="_blank">DOWNLOAD</a></td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                              </div>
-                              <% } else if(type == 6) { %>
-                                <!--TUMBLR DOWNLOAD-->
-                                <div class="video-info">       
-                                    <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                    </br></br>
-                                    <div class="video-title">
-                                        <span><%=title%></span>
-                                    </div>
-                                </div>
-                                <div class="download-info">
-                                    <table>
-                                        <thead>
-                                          <tr>
-                                              <th>Quality</th>
-                                              <th>Format</th>
-                                              <th>Type</th>
-                                              <th>Download</th>
-                                          </tr>
-                                        </thead>
-                                
-                                        <tbody>
-                                          <tr>
-                                            <td>Normal</td>
-                                            <td>mp4</td>
-                                            <td>Video No Sound</td>
-                                            <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                </div>
-                                <% } else if(type == 7) { %>
-                                  <!--VIMEO DOWNLOAD-->
-                                  <div class="video-info">       
-                                      <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                      </br></br>
-                                      <div class="video-title">
-                                          <span><%=title%></span>
-                                      </div>
-                                  </div>
-                                  <div class="download-info">
-                                      <table>
-                                          <thead>
-                                            <tr>
-                                                <th>Quality</th>
-                                                <th>Format</th>
-                                                <th>Type</th>
-                                                <th>Download</th>
-                                            </tr>
-                                          </thead>
-                                  
-                                          <tbody>
-                                            <tr>
-                                              <td>1080p</td>
-                                              <td>mp4</td>
-                                              <td>Video</td>
-                                              <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                            </tr>
-                                            <tr>
-                                              <td>720p</td>
-                                              <td>mp4</td>
-                                              <td>Video</td>
-                                              <td><a href="<%=video2%>" download target="_blank">DOWNLOAD</a></td>
-                                            </tr>
-                                            <tr>
-                                              <td>540p</td>
-                                              <td>mp4</td>
-                                              <td>Video</td>
-                                              <td><a href="<%=video3%>" download target="_blank">DOWNLOAD</a></td>
-                                            </tr>
-                                            <tr>
-                                              <td>360p</td>
-                                              <td>mp4</td>
-                                              <td>Video</td>
-                                              <td><a href="<%=video4%>" download target="_blank">DOWNLOAD</a></td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                  </div>
-                                  <% } else if(type == 8) { %>
-                                    <!--VIMEO DOWNLOAD-->
-                                    <div class="video-info">       
-                                        <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                        </br></br>
-                                        <div class="video-title">
-                                            <span><%=title%></span>
-                                        </div>
-                                    </div>
-                                    <div class="download-info">
-                                        <table>
-                                            <thead>
-                                              <tr>
-                                                  <th>Quality</th>
-                                                  <th>Format</th>
-                                                  <th>Type</th>
-                                                  <th>Download</th>
-                                              </tr>
-                                            </thead>
-                                    
-                                            <tbody>
-                                              <tr>
-                                                <td>1080p</td>
-                                                <td>mp4</td>
-                                                <td>Video</td>
-                                                <td><a href="<%=video5%>" download target="_blank">DOWNLOAD</a></td>
-                                              </tr>
-                                              <tr>
-                                                <td>720p</td>
-                                                <td>mp4</td>
-                                                <td>Video</td>
-                                                <td><a href="<%=video4%>" download target="_blank">DOWNLOAD</a></td>
-                                              </tr>
-                                              <tr>
-                                                <td>480p</td>
-                                                <td>mp4</td>
-                                                <td>Video</td>
-                                                <td><a href="<%=video3%>" download target="_blank">DOWNLOAD</a></td>
-                                              </tr>
-                                              <tr>
-                                                <td>360p</td>
-                                                <td>mp4</td>
-                                                <td>Video</td>
-                                                <td><a href="<%=video2%>" download target="_blank">DOWNLOAD</a></td>
-                                              </tr>
-                                              <tr>
-                                                <td>240p</td>
-                                                <td>mp4</td>
-                                                <td>Video</td>
-                                                <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                    </div>
-                                    <% } else if(type == 9) { %>
-                                      <!--VIMEO DOWNLOAD-->
-                                      <div class="video-info">       
-                                          <img class="video-thumb" src="<%=thumbnail%>"/>        
-                                          </br></br>
-                                          <div class="video-title">
-                                              <span><%=title%></span>
-                                          </div>
-                                      </div>
-                                      <div class="download-info">
-                                          <table>
-                                              <thead>
-                                                <tr>
-                                                    <th>Quality</th>
-                                                    <th>Format</th>
-                                                    <th>Type</th>
-                                                    <th>Download</th>
-                                                </tr>
-                                              </thead>
-                                      
-                                              <tbody>
-                                                <tr>
-                                                  <td>1080p</td>
-                                                  <td>mp4</td>
-                                                  <td>Video</td>
-                                                  <td><a href="<%=video1%>" download target="_blank">DOWNLOAD</a></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>720p</td>
-                                                  <td>mp4</td>
-                                                  <td>Video</td>
-                                                  <td><a href="<%=video2%>" download target="_blank">DOWNLOAD</a></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>480p</td>
-                                                  <td>mp4</td>
-                                                  <td>Video</td>
-                                                  <td><a href="<%=video3%>" download target="_blank">DOWNLOAD</a></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>360p</td>
-                                                  <td>mp4</td>
-                                                  <td>Video</td>
-                                                  <td><a href="<%=video4%>" download target="_blank">DOWNLOAD</a></td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                      </div>
-                                  <% } %>
+                </div>
+                <div class="format-list">
+                    <table>
+                        <thead>
+                          <tr>
+                              <th>Quality</th>
+                              <th>Format</th>
+                              <th>Type</th>
+                              <th>Download</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <% formats.forEach(function(f) { %>
+                          <tr>
+                            <td><%=f.quality%></td>
+                            <td><%=f.ext%></td>
+                            <td><%=f.type%></td>
+                            <td><a href="<%=f.url%>" download>DOWNLOAD</a></td>
+                          </tr>
+                          <% }) %>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <!--INFO-->
             <div class="info" id="info">
-                <a class="copyright" style="font-weight:900" href="mailto:saveplusx2@gmail.com" target="_blank">Contact: saveplusx2@gmail.com</a>
+                <a class="copyright" style="font-weight:900" href="mailto:contact@nhattran.dev" target="_blank">Contact: contact@nhattran.dev</a>
                 </br>
-                <a class="copyright">Copyright © 2020 Saveplus2x.com. All rights reserved.</a>
+                <a class="copyright">Copyright © 2020 GrabVid. All rights reserved.</a>
             </div>
         </div>
     </div>

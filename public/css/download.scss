@@ -457,3 +457,36 @@ body {
         }
     }
 }
+.format-list {
+    flex: 1;
+    min-width: 0;
+    padding: 0 24px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-height: calc(100vh - 380px);
+    min-height: 160px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.format-list table td, .format-list table th {
+    padding: 15px 5px;
+}
+
+.format-list a.is-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.format-list.is-busy a:not(.is-loading) {
+  opacity: 0.5;
+}
+
+.format-list.is-busy {
+  pointer-events: none;
+}
+
+.download-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
