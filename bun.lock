@@ -19,6 +19,7 @@
     },
   },
   "trustedDependencies": [
+    "ffmpeg-static",
     "youtube-dl-exec",
   ],
   "packages": {
