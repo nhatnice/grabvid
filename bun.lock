@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "Saveplus2x",
+      "name": "grabvid",
       "dependencies": {
         "ejs": "^3.0.2",
         "express": "^4.17.1",
